@@ -49,9 +49,4 @@
     if (self.delegate) [self.delegate didUpdateLocation:[locations lastObject]];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"%@", [error description]);
-}
-
 @end

@@ -59,6 +59,12 @@ static const double kphFactor = 3.6;
 
 - (void)updateSpeedLabel
 {
+    if (_speed < 0.0)
+    {
+        [self noSpeed];
+        return;
+    }
+    
     NSString *speedString = nil;
     if (units == kMPH) speedString = [NSString stringWithFormat:@"%.1f mph", _speed*mphFactor];
     else if (units == kKPH) speedString = [NSString stringWithFormat:@"%.1f kph", _speed*kphFactor];
@@ -67,6 +73,21 @@ static const double kphFactor = 3.6;
     [mString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Light" size:128] range:NSMakeRange(0, speedString.length-6)];
     [mString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Light" size:32] range:NSMakeRange(speedString.length-6, 2)];
     [mString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Light" size:16] range:NSMakeRange(speedString.length-4, 4)];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.speedLabel setAttributedText:mString];
+    });
+}
+
+- (void)noSpeed
+{
+    NSString *speedString = nil;
+    if (units == kMPH) speedString = @"NA mph";
+    else if (units == kKPH) speedString = @"NA kph";
+    
+    NSMutableAttributedString *mString = [[NSMutableAttributedString alloc] initWithString:speedString];
+    [mString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Light" size:128] range:NSMakeRange(0, 2)];
+    [mString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Light" size:16] range:NSMakeRange(2,4)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.speedLabel setAttributedText:mString];

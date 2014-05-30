@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq0-VA-kNx">
-                                <rect key="frame" x="25" y="149" width="270" height="270"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eq0-VA-kNx">
+                                <rect key="frame" x="0.0" y="149" width="320" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="W9n-QS-qSD"/>
@@ -41,8 +41,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="idm-gQ-fJq" firstAttribute="top" secondItem="92q-QQ-Mvx" secondAttribute="bottom" constant="20" id="302-KF-tJ8"/>
-                            <constraint firstItem="eq0-VA-kNx" firstAttribute="leading" secondItem="Saq-fx-18M" secondAttribute="leading" constant="25" id="7wP-85-nyy"/>
-                            <constraint firstAttribute="trailing" secondItem="eq0-VA-kNx" secondAttribute="trailing" constant="25" id="GXB-n7-Lil"/>
+                            <constraint firstItem="eq0-VA-kNx" firstAttribute="leading" secondItem="Saq-fx-18M" secondAttribute="leading" id="7wP-85-nyy"/>
+                            <constraint firstAttribute="trailing" secondItem="eq0-VA-kNx" secondAttribute="trailing" id="GXB-n7-Lil"/>
                             <constraint firstAttribute="trailing" secondItem="92q-QQ-Mvx" secondAttribute="trailing" constant="20" id="Ptv-At-SUb"/>
                             <constraint firstItem="eq0-VA-kNx" firstAttribute="centerY" secondItem="Saq-fx-18M" secondAttribute="centerY" id="uMo-mu-1WE"/>
                         </constraints>
