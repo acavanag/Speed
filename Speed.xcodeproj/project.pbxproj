@@ -22,6 +22,9 @@
 		8698FF9319322AC600C2AA3A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8698FF7719322AC200C2AA3A /* CoreData.framework */; };
 		8698FF9B19322AC700C2AA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8698FF9919322AC700C2AA3A /* InfoPlist.strings */; };
 		8698FF9D19322AC800C2AA3A /* SpeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698FF9C19322AC800C2AA3A /* SpeedTests.m */; };
+		8698FFA719322C9400C2AA3A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8698FFA619322C9400C2AA3A /* Storyboard.storyboard */; };
+		8698FFAB19322D2800C2AA3A /* WWSpeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698FFAA19322D2800C2AA3A /* WWSpeedController.m */; };
+		8698FFAE19322E5900C2AA3A /* WWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698FFAD19322E5900C2AA3A /* WWLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		8698FF9819322AC700C2AA3A /* SpeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedTests-Info.plist"; sourceTree = "<group>"; };
 		8698FF9A19322AC700C2AA3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8698FF9C19322AC800C2AA3A /* SpeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedTests.m; sourceTree = "<group>"; };
+		8698FFA619322C9400C2AA3A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8698FFA919322D2800C2AA3A /* WWSpeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSpeedController.h; sourceTree = "<group>"; };
+		8698FFAA19322D2800C2AA3A /* WWSpeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSpeedController.m; sourceTree = "<group>"; };
+		8698FFAC19322E5900C2AA3A /* WWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLocationManager.h; sourceTree = "<group>"; };
+		8698FFAD19322E5900C2AA3A /* WWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +123,10 @@
 		8698FF7919322AC200C2AA3A /* Speed */ = {
 			isa = PBXGroup;
 			children = (
+				8698FFA819322D0A00C2AA3A /* Speed */,
 				8698FF8219322AC400C2AA3A /* WWAppDelegate.h */,
 				8698FF8319322AC400C2AA3A /* WWAppDelegate.m */,
+				8698FFA619322C9400C2AA3A /* Storyboard.storyboard */,
 				8698FF8819322AC600C2AA3A /* Images.xcassets */,
 				8698FF8519322AC500C2AA3A /* Speed.xcdatamodeld */,
 				8698FF7A19322AC300C2AA3A /* Supporting Files */,
@@ -151,6 +161,17 @@
 				8698FF9919322AC700C2AA3A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8698FFA819322D0A00C2AA3A /* Speed */ = {
+			isa = PBXGroup;
+			children = (
+				8698FFA919322D2800C2AA3A /* WWSpeedController.h */,
+				8698FFAA19322D2800C2AA3A /* WWSpeedController.m */,
+				8698FFAC19322E5900C2AA3A /* WWLocationManager.h */,
+				8698FFAD19322E5900C2AA3A /* WWLocationManager.m */,
+			);
+			name = Speed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +252,7 @@
 			files = (
 				8698FF7E19322AC300C2AA3A /* InfoPlist.strings in Resources */,
 				8698FF8919322AC600C2AA3A /* Images.xcassets in Resources */,
+				8698FFA719322C9400C2AA3A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8698FF8419322AC400C2AA3A /* WWAppDelegate.m in Sources */,
+				8698FFAB19322D2800C2AA3A /* WWSpeedController.m in Sources */,
+				8698FFAE19322E5900C2AA3A /* WWLocationManager.m in Sources */,
 				8698FF8719322AC500C2AA3A /* Speed.xcdatamodeld in Sources */,
 				8698FF8019322AC400C2AA3A /* main.m in Sources */,
 			);
